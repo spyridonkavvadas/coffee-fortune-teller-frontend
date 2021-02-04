@@ -1,0 +1,32 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+}
+body {
+  background: #fde3a7;
+}
+
+
+
+/************************** NEON TITLE CSSS ****************************************/
+
+@import url(//fonts.googleapis.com/css?family=Vibur);
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #112 url(https://st.depositphotos.com/2086879/2449/i/600/depositphotos_24493081-stock-photo-old-paper.jpg) center
+    no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
