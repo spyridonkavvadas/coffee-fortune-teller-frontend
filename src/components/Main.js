@@ -83,6 +83,16 @@ export default function Main() {
       </Form.Control>
     </Form.Group>
 
+    <Form.Group as={Col} controlId="formGridState">
+      <Form.Label>Status</Form.Label>
+      <Form.Control as="select" defaultValue="Select Status">
+        <option>Married</option>
+        <option>Engaged</option>
+        <option>Divorced</option>
+        <option>Single</option>
+      </Form.Control>
+    </Form.Group>
+
       <Button variant="primary" type="submit">
         Submit
       </Button>
