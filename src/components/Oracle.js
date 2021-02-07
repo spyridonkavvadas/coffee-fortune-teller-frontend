@@ -1,24 +1,36 @@
-import React  from "react";
+import React, { useState, useEffect } from "react";
+
 
 import Header from "./Header";
-import axios from "axios";
+
+const getOraclesUrl = "http://localhost:5000/oracles";
 
 function Oracle() {
-  // Get Oracles as Data with Axios
- const getOracle = () => { 
-   axios.get("http://localhost:5000/oracles").then(response => {
-    console.log(response.data)
-   
- })
- };
   
+  const [userData, setUserData] = useState({});
+
+  useEffect(() => {
+    getOraclesWithFetch();
+  }, []);
+
+  const getOraclesWithFetch = async () => {
+    const response = await fetch(getOraclesUrl);
+    const jsonData = await response.json();
+    setUserData(jsonData);
+    console.log(jsonData);
+
+  };
+
 
 
   return (
     <>
       <Header />
         <div>This is the oracle page
-          <button onClick={getOracle()}>Get Oracle</button>
+        <h5>{userData.id}</h5>
+        <h5>{userData.predictions}</h5>
+        <h5>{userData.category}</h5>
+        <h5>{userData.kindof}</h5>
         </div>
 
            

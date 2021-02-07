@@ -61,13 +61,17 @@ export default function Main() {
 
     <Form>
     
-
+      <Row>
+        <Col xs={6} md={4}>Name</Col>
+        <Col xs={6} md={8}>
       <Form.Group controlId="formBasicEmail">
-        <Form.Label>Name</Form.Label>
+        <Form.Label></Form.Label>
         <Form.Control type="text" placeholder="Enter your Name here" />
         <Form.Text className="text-muted">
         </Form.Text>
       </Form.Group>
+      </Col>
+      </Row>
 
       <Form.Group controlId="dob">
         <Form.Label>Birthday</Form.Label>
@@ -93,8 +97,12 @@ export default function Main() {
       </Form.Control>
     </Form.Group>
 
+    <Card>
+      <Card.Body>Insert photos of the coffee cup and saucer to be read. Enter name, birthday, gender, and status. Then press the button below and get the oracle.</Card.Body>
+    </Card>
+
       <Button variant="primary" type="submit">
-        Submit
+        Get Oracle
       </Button>
     </Form>
     </>
