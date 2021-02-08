@@ -29,7 +29,7 @@ function Oracle() {
       <div>This is the oracle page </div>
       {userData.map(({ predictions, _id }) =><div key={_id}>{predictions}</div>)}
     </>
-  );
+  ); 
 }
 
 export default Oracle;
