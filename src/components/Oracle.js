@@ -7,8 +7,8 @@ const getOraclesUrl = "http://localhost:5000/oracles";
 
 function Oracle() {
   
-  const [userData, setUserData] = useState({});
-
+  const [userData, setUserData] = useState([]);
+  
   useEffect(() => {
     getOraclesWithFetch();
   }, []);
@@ -16,25 +16,18 @@ function Oracle() {
   const getOraclesWithFetch = async () => {
     const response = await fetch(getOraclesUrl);
     const jsonData = await response.json();
-    setUserData(jsonData);
-    console.log(jsonData);
+    setUserData(jsonData.data);
+   //console.log(jsonData);
 
   };
-
-
-
+  
+  console.log(userData);
+  
   return (
     <>
       <Header />
-        <div>This is the oracle page
-        <h5>{userData.id}</h5>
-        <h5>{userData.predictions}</h5>
-        <h5>{userData.category}</h5>
-        <h5>{userData.kindof}</h5>
-        </div>
-
-           
-        
+      <div>This is the oracle page </div>
+      {userData.map(({ predictions, _id }) =><div key={_id}>{predictions}</div>)}
     </>
   );
 }

@@ -1,21 +1,21 @@
 import React from "react";
 import "./App.css";
 import Main from "./components/Main";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Oracle from "./components/Oracle";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <switch>
+        <Switch>
           <Route exact path="/">
-          <Main />
+            <Main />
           </Route>
           <Route path="/oracle">
             <Oracle />
           </Route>
-        </switch>
+        </Switch>
       </div>
     </Router>
   );

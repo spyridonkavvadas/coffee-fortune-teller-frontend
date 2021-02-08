@@ -14,97 +14,138 @@ export default function Main() {
       <Header />
      
          <h4>Insert coffee cup photos here</h4>
-         <Container>
-  <Row>
+      <Container>
+        
+        <Row className="justify-content-md-center">
+            
+              <Col sm={9}></Col>
 
-    <Col xs={6} md={4}>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          
-          <Form.Group>
-              <Form.File id="exampleFormControlFile1" label="Insert Cup Photo" />
+                  <Row>
+
+                    <Col sm={3}>
+                      <Card style={{ width: '14rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                          <Card.Title>Card Title</Card.Title>
+                          
+                          <Form.Group>
+                              <Form.File id="exampleFormControlFile1" label="Insert Cup Photo" />
+                            </Form.Group>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+
+                    <Col sm={3}>
+                      <Card style={{ width: '14rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                          <Card.Title>Card Title</Card.Title>
+                          
+                          <Form.Group>
+                              <Form.File id="exampleFormControlFile1" label="Insert Cup Photo" />
+                            </Form.Group>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+
+                    <Col sm={3}>
+                      <Card style={{ width: '14rem' }}>
+                        <Card.Img variant="top" src="exampleFormControlFile1" />
+                          <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            
+                            <Form.Group>
+                              <Form.File id="exampleFormControlFile1" label="Insert Cup Photo" />
+                            </Form.Group>
+                          </Card.Body>
+                        </Card>
+                     </Col>
+
+          </Row>
+        <Form>
+          <Row>
+            <Col sm={3}><div>Name</div></Col>
+            <Col sm={6}>
+              <Form.Group controlId="formBasicEmail">
+                <Form.Label></Form.Label>
+                  <Form.Control type="text" placeholder="Enter your Name here" />
+                  <Form.Text className="text-muted">
+                </Form.Text>
             </Form.Group>
-        </Card.Body>
-      </Card>
-    </Col>
+            </Col>
+	      	</Row>  
 
-    <Col xs={6} md={4}>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          
-          <Form.Group>
-              <Form.File id="exampleFormControlFile1" label="Insert Cup Photo" />
+          <Row>
+            <Col sm={3}>Birthday</Col>
+            <Col sm={6}>
+            <Form.Group controlId="dob">
+              <Form.Label></Form.Label>
+              <Form.Control type="date" name="dob" placeholder="Date of Birth" />
+             </Form.Group>
+
+            </Col>
+	      	</Row>
+
+          <Row>
+            <Col sm={3}>Gender</Col>
+            <Col sm={6}>
+            <Form.Group as={Col} controlId="formGridState">
+              <Form.Label></Form.Label>
+              <Form.Control as="select" defaultValue="Select Gender">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </Form.Control>
             </Form.Group>
-        </Card.Body>
-      </Card>
-    </Col>
 
-    <Col xs={6} md={4}>
-    <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="exampleFormControlFile1" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          
-            <Form.Group>
-              <Form.File id="exampleFormControlFile1" label="Insert Cup Photo" />
+            </Col>
+	      	</Row>          
+
+          <Row>
+            <Col sm={3}>Status</Col>
+            <Col sm={6}>
+            <Form.Group as={Col} controlId="formGridState">
+              <Form.Label></Form.Label>
+              <Form.Control as="select" defaultValue="Select Status">
+                <option>Married</option>
+                <option>Engaged</option>
+                <option>Divorced</option>
+                <option>Single</option>
+              </Form.Control>
             </Form.Group>
-        </Card.Body>
-      </Card>
-    </Col>
+            </Col>
+		      </Row>
 
-  </Row>
-</Container>
+          <Row>
+            <Col sm={9}>
+            <span> </span>
+            </Col>
+		      </Row>
 
-    <Form>
-    
-      <Row>
-        <Col xs={6} md={4}>Name</Col>
-        <Col xs={6} md={8}>
-      <Form.Group controlId="formBasicEmail">
-        <Form.Label></Form.Label>
-        <Form.Control type="text" placeholder="Enter your Name here" />
-        <Form.Text className="text-muted">
-        </Form.Text>
-      </Form.Group>
-      </Col>
-      </Row>
 
-      <Form.Group controlId="dob">
-        <Form.Label>Birthday</Form.Label>
-        <Form.Control type="date" name="dob" placeholder="Date of Birth" />
-      </Form.Group>
+          <Row>
+            <Col sm={9}>
+            <Card>
+              <Card.Body>Insert photos of the coffee cup and saucer to be read. Enter name, birthday, gender, and status. Then press the button below and get the oracle.</Card.Body>
+            </Card>
+            </Col>
+		      </Row>
 
-      <Form.Group as={Col} controlId="formGridState">
-      <Form.Label>Gender</Form.Label>
-      <Form.Control as="select" defaultValue="Select Gender">
-        <option>Male</option>
-        <option>Female</option>
-        <option>Other</option>
-      </Form.Control>
-    </Form.Group>
+          <Row>
+          <Col sm={9}>
+          <Button variant="primary" type="submit">
+          Get Oracle
+        </Button>
+          </Col>
+          </Row>
 
-    <Form.Group as={Col} controlId="formGridState">
-      <Form.Label>Status</Form.Label>
-      <Form.Control as="select" defaultValue="Select Status">
-        <option>Married</option>
-        <option>Engaged</option>
-        <option>Divorced</option>
-        <option>Single</option>
-      </Form.Control>
-    </Form.Group>
-
-    <Card>
-      <Card.Body>Insert photos of the coffee cup and saucer to be read. Enter name, birthday, gender, and status. Then press the button below and get the oracle.</Card.Body>
-    </Card>
-
-      <Button variant="primary" type="submit">
-        Get Oracle
-      </Button>
-    </Form>
-    </>
+          </Form>
+       
+         
+        </Row>
+      
+      </Container>
   );
+  </>
+  )
 }
