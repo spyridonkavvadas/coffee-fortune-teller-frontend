@@ -14,15 +14,11 @@ body {
   background: #fde3a7;
 }
 
-
-
-/************************** NEON TITLE CSSS ****************************************/
-
-@import url(//fonts.googleapis.com/css?family=Vibur);
-html,
-body {
-  height: 100%;
+.nameLabel {
+  justify-content: flex-end;
 }
+
+/* Old paper background */
 body {
   background: #112 url(https://st.depositphotos.com/2086879/2449/i/600/depositphotos_24493081-stock-photo-old-paper.jpg) center
     no-repeat;
@@ -30,3 +26,11 @@ body {
   margin: 0;
 }
 
+.card-image {
+  img.slide {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 100vh;
+  }
+}

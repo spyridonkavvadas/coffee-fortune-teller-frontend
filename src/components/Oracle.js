@@ -3,11 +3,11 @@ import React, { useState, useEffect } from "react";
 
 import Header from "./Header";
 
-const getOraclesUrl = "http://localhost:5000/oracles";
+const getOraclesUrl = "http://localhost:5000/oracles/random";
 
 function Oracle() {
   
-  const [userData, setUserData] = useState([]);
+  const [userData, setUserData] = useState(null);
   
   useEffect(() => {
     getOraclesWithFetch();
@@ -27,7 +27,8 @@ function Oracle() {
     <>
       <Header />
       <div>This is the oracle page </div>
-      {userData.map(({ predictions, _id }) =><div key={_id}>{predictions}</div>)}
+     
+      {userData && <div>{userData}</div>}
     </>
   ); 
 }

@@ -12,6 +12,7 @@ function App() {
           <Route exact path="/">
             <Main />
           </Route>
+          <Oracle />
           <Route path="/oracle">
             <Oracle />
           </Route>
