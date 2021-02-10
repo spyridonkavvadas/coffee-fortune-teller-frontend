@@ -24,7 +24,7 @@ export default function Main() {
       <Container>
        {/* Fortune Teller Persona*/}
       <div class="row align-items-center bg-faded">
-      <div class='col-3'><img src={"https://play-lh.googleusercontent.com/-J9QX8gUIuN9_3sSsLuYU0NssigY5hpQfq4nsQaJp6NPvqYf65bq6WQSWlbVs6pBzGK5"} alt={"Coffee Fortune Teller"} width={'120px'}/></div>
+      <div class='col-3'><img src={"https://play-lh.googleusercontent.com/-J9QX8gUIuN9_3sSsLuYU0NssigY5hpQfq4nsQaJp6NPvqYf65bq6WQSWlbVs6pBzGK5"} alt={"Coffee Fortune Teller"} width={'130px'}/></div>
       {/* Instructions */}
       <div class='col-6'id='inst-text'>
           <h6>Insert coffee cup photos here</h6>
@@ -41,11 +41,10 @@ export default function Main() {
             <Card.Img variant="top"  src={image} alt="" width={'150px'} height={'150px'}/>
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
-                <Form.Group>
-                    
-                    <input type="file" onChange={handleChange} />
-                   
-                  </Form.Group>
+                <Form.Group> 
+                  <input type="file" onChange={handleChange}/>
+                
+                </Form.Group>
               </Card.Body>
             </Card>
           </div>
@@ -141,7 +140,7 @@ export default function Main() {
       {/*Button*/}
       <div class="row">
       <div class="col-12">
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" size="lg">
           Get Oracle
         </Button>
         </div>
@@ -149,9 +148,7 @@ export default function Main() {
        
     </Form>
 
-        
-      
-      </Container>
+  </Container>
 
   </>
   )
