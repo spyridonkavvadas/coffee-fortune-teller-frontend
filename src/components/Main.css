@@ -34,3 +34,17 @@ body {
     max-height: 100vh;
   }
 }
+
+div.row {
+  align-items: flex-end;
+  vertical-align: bottom;
+}
+
+div.col-2 {
+  vertical-align:text-bottom;
+  text-align: left;
+}
+
+h5 {
+  
+}

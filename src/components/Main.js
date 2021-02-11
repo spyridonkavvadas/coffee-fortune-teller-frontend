@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import {Container, Col, Card} from 'react-bootstrap';
 import { FaUserAlt, FaCalendarDay, FaTransgender } from "react-icons/fa";
 import { IoIosHeartHalf } from "react-icons/io";
+import persona0 from "../images/persona0.png";
 
 
 
@@ -21,8 +22,8 @@ export default function Main({
       <Header />
       <Container>
        {/* Fortune Teller Persona*/}
-      <div class="row align-items-center bg-faded">
-      <div class='col-3'><img src={"https://play-lh.googleusercontent.com/-J9QX8gUIuN9_3sSsLuYU0NssigY5hpQfq4nsQaJp6NPvqYf65bq6WQSWlbVs6pBzGK5"} alt={"Coffee Fortune Teller"} width={'130px'}/></div>
+      <div class="row align-items-center bg-faded mb-2">
+      <div class='col-3 d-flex justify-content-start'><img class='img-fluid' src={persona0} alt={"Coffee Fortune Teller"} width={'140px'}/></div>
       {/* Instructions */}
       <div class='col-6'id='inst-text'>
           <h6>Insert coffee cup photos here</h6>
@@ -75,7 +76,7 @@ export default function Main({
         <Form>
       {/*Enter Name*/}
         <div class="row">
-          <div class="col-2"><h5>Name</h5></div>
+          <div class="col-2"><h5 class='mb-0'>Name</h5></div>
           <div class="col-2"><FaUserAlt size='1.2em'/></div>
           <div class="col-8">
             <Form.Group controlId="formName">
@@ -89,7 +90,7 @@ export default function Main({
 
       {/*Enter Birthday*/}
       <div class="row">
-        <div class="col-2"><h5>Birthday</h5></div>
+        <div class="col-2"><h5 class='mb-0'>Birthday</h5></div>
         <div class="col-2"><FaCalendarDay size='1.2em'/></div>
           <div class="col-8">
             <Form.Group controlId="dob">
@@ -101,7 +102,7 @@ export default function Main({
 
        {/*Enter Gender*/}
        <div class="row">
-        <div class="col-2"><h5>Gender</h5></div>
+        <div class="col-2"><h5 class='mb-0'>Gender</h5></div>
         <div class="col-2"><FaTransgender size='1.5em'/></div>
           <div class="col-8">
           <Form.Group as={Col} controlId="formGridState">
@@ -116,8 +117,8 @@ export default function Main({
       </div>
 
        {/*Enter Status*/}
-       <div class="row">
-        <div class="col-2"><h5>Status</h5></div>
+       <div class="row mb-2">
+        <div class="col-2"><h5 class='mb-0'>Status</h5></div>
         <div class="col-2"><IoIosHeartHalf size='1.5em'/></div>
           <div class="col-8">
           <Form.Group as={Col} controlId="formGridState">

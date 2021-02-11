@@ -1,4 +1,5 @@
 import React from "react";
+import persona3 from "../images/persona3.jpg";
 
 
 function Oracle({ oracle }) {
@@ -11,7 +12,7 @@ function Oracle({ oracle }) {
         </div>
         <div class='col-8'>
 
-        <img src={"https://static3.bigstockphoto.com/5/6/1/large1500/16506782.jpg"} alt={"Coffee Fortune Teller"} width={'130px'}/>
+        <img src={persona3} alt={"Coffee Fortune Teller"} width={'129px'}/>
 
           </div>
           <div class='col-2'></div>
