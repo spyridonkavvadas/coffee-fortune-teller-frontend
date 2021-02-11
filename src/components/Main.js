@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Header from "./Header";
 import "./Main.css";
 import Form from 'react-bootstrap/Form';
@@ -9,14 +9,12 @@ import { IoIosHeartHalf } from "react-icons/io";
 
 
 
-export default function Main() {
-
-  const [image, setImage] = useState(null);
-  const [image2, setImage2] = useState(null);
-  const [image3, setImage3] = useState(null);
-  const handleChange = e => setImage(URL.createObjectURL(e.target.files[0]));
-  const handleChange2 = e => setImage2(URL.createObjectURL(e.target.files[0]));
-  const handleChange3 = e => setImage3(URL.createObjectURL(e.target.files[0]));
+export default function Main({
+  images,
+  onUpload,
+  getOracle,
+  isButtonDisabled
+}) {
 
   return (
     <>
@@ -38,11 +36,11 @@ export default function Main() {
         <div class="row align-items-center bg-faded">
           <div class="col-4">
             <Card>
-            <Card.Img variant="top"  src={image} alt="" width={'150px'} height={'150px'}/>
+            <Card.Img variant="top"  src={images[0]} alt="" width={'150px'} height={'150px'}/>
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
                 <Form.Group> 
-                  <input type="file" onChange={handleChange}/>
+                  <input type="file" onChange={(e) => {onUpload(e.target.files[0], 1)}}/>
                 
                 </Form.Group>
               </Card.Body>
@@ -51,11 +49,11 @@ export default function Main() {
 
           <div class="col-4">
             <Card>
-              <Card.Img variant="top"  src={image2} alt="" width={'150px'} height={'150px'}/>
+              <Card.Img variant="top"  src={images[1]} alt="" width={'150px'} height={'150px'}/>
                   <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Form.Group>
-                    <Form.File type="file" onChange={handleChange2} />
+                    <Form.File type="file" onChange={(e) => {onUpload(e.target.files[0], 2)}} />
                   </Form.Group>
               </Card.Body>
             </Card>
@@ -63,11 +61,11 @@ export default function Main() {
             
           <div class="col-4">
           <Card>
-              <Card.Img variant="top" src={image3} alt="" width={'150px'} height={'150px'}/>
+              <Card.Img variant="top" src={images[2]} alt="" width={'150px'} height={'150px'}/>
                   <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Form.Group>
-                    <Form.File id="uploadPhoto" type="file" onChange={handleChange3} />
+                    <Form.File id="uploadPhoto" type="file" onChange={(e) => {onUpload(e.target.files[0], 3)}} />
                   </Form.Group>
               </Card.Body>
             </Card>
@@ -140,7 +138,7 @@ export default function Main() {
       {/*Button*/}
       <div class="row">
       <div class="col-12">
-        <Button variant="primary" type="submit" size="lg">
+        <Button disabled={isButtonDisabled} variant="primary" size="lg" onClick={getOracle} onKeyPress={getOracle}>
           Get Oracle
         </Button>
         </div>

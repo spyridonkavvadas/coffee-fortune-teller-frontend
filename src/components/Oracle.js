@@ -1,34 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-
-import Header from "./Header";
-
-const getOraclesUrl = "http://localhost:5000/oracles/random";
-
-function Oracle() {
-  
-  const [userData, setUserData] = useState(null);
-  
-  useEffect(() => {
-    getOraclesWithFetch();
-  }, []);
-
-  const getOraclesWithFetch = async () => {
-    const response = await fetch(getOraclesUrl);
-    const jsonData = await response.json();
-    setUserData(jsonData.data);
-   //console.log(jsonData);
-
-  };
-  
-  console.log(userData);
+function Oracle({ oracle }) {
   
   return (
     <>
-      <Header />
-      <div>This is the oracle page </div>
-     
-      {userData && <div>{userData}</div>}
+      <container>
+      <div class='row align-items-left bg-faded'>
+        <div class='col-2'>
+        </div>
+        <div class='col-8'>
+
+        <img src={"https://static3.bigstockphoto.com/5/6/1/large1500/16506782.jpg"} alt={"Coffee Fortune Teller"} width={'130px'}/>
+
+          </div>
+          <div class='col-2'></div>
+      </div>
+
+      <div class='row align-items-center bg-faded'>
+        <div class='col-2'>
+        </div>
+        {oracle && 
+        <div class='col-8 align-text-right'>
+          <h4>Here is your Oracle! </h4>
+            <div class='text-oracle'>{oracle}</div>
+        </div>}
+        <div class='col-2'></div>
+      </div>
+      </container>
     </>
   ); 
 }
