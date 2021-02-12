@@ -15,6 +15,11 @@ code {
 
 div.text-oracle.p-5 {
   font-family: 'Comic Neue', cursive;
-  font-size: 22px;
+  font-size: 20px;
   font-weight:500;
+  text-align: left;
+}
+
+div#inst-text.col-6.p-3 {
+  text-align: left;
 }

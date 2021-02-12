@@ -25,7 +25,7 @@ export default function Main({
       <div class="row align-items-center bg-faded mb-2">
       <div class='col-3 d-flex justify-content-start'><img class='img-fluid' src={persona0} alt={"Coffee Fortune Teller"} width={'140px'}/></div>
       {/* Instructions */}
-      <div class='col-6'id='inst-text'>
+      <div class='col-6 p-3'id='inst-text'>
           <h6>Insert coffee cup photos here</h6>
           <h6>Enter name, birthday, gender, and status</h6>
           <h6>Press the button below and get the Oracle</h6>

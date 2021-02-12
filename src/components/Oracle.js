@@ -9,7 +9,7 @@ function Oracle({ oracle }) {
   return (
     <>
       <container>
-      <div class='row align-items-left bg-faded'>
+      <div class='row align-items-left bg-faded mb-2'>
         <div class='col-2'>
         </div>
         <div class='col-8'>
@@ -20,13 +20,13 @@ function Oracle({ oracle }) {
           <div class='col-2'></div>
       </div>
 
-      <div class='row align-items-center bg-faded'>
+      <div class='row align-items-center bg-faded mb-5'>
         <div class='col-2'>
         </div>
         {oracle && 
         <div class='col-8 align-text-right'>
           <h4>Here is your Oracle! </h4>
-          <div class='text-oracle p-5' style={{backgroundColor: "whitesmoke"}}>
+          <div class='text-oracle p-5 mt-2' style={{backgroundColor: "whitesmoke"}}>
             {oracle.map((item) => <p>{item}</p>)}
           </div>
         </div>}
