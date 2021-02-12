@@ -5,9 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+div.text-oracle.p-5 {
+  font-family: 'Comic Neue', cursive;
+  font-size: 22px;
+  font-weight:500;
 }
