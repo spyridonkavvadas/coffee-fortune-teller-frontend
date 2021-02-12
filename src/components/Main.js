@@ -117,7 +117,7 @@ export default function Main({
       </div>
 
        {/*Enter Status*/}
-       <div class="row mb-2">
+       <div class="row mb-4">
         <div class="col-2"><h5 class='mb-0'>Status</h5></div>
         <div class="col-2"><IoIosHeartHalf size='1.5em'/></div>
           <div class="col-8">

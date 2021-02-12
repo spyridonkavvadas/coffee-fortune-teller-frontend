@@ -1,5 +1,8 @@
+import { Opacity } from "@material-ui/icons";
 import React from "react";
 import persona3 from "../images/persona3.jpg";
+
+
 
 
 function Oracle({ oracle }) {
@@ -24,7 +27,7 @@ function Oracle({ oracle }) {
         {oracle && 
         <div class='col-8 align-text-right'>
           <h4>Here is your Oracle! </h4>
-            <div class='text-oracle'>{oracle}</div>
+          <div class='text-oracle p-5' style={{backgroundColor: "whitesmoke"}}>{oracle}</div>
         </div>}
         <div class='col-2'></div>
       </div>
