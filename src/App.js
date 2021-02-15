@@ -25,6 +25,13 @@ function App() {
     setOracle(jsonData.data);
   };
 
+  const handleChange = (e) => {
+    setUserData({
+      ...userData,
+      [e.target.name]: e.target.value
+    });
+  };
+
   const onUpload = (file, pos) => {
     const fileUrl = URL.createObjectURL(file)
     if (pos === 1) {
@@ -36,18 +43,33 @@ function App() {
     }
   }
 
-  const isButtonDisabled = () =>  {
-    // check if there is at least one image
-    // check that all fields are filled
-    return false;
+  const checkMinimumOneImage = () => {
+    if (image || image2 || image3) return true;
+    return false
   }
 
+  const checkCompulsoryFields = () => {
+    if (userData.name 
+      && userData.gender
+      && userData.status
+      && userData.birthday
+    ) return true;
+    return false;
+  }
+ 
+  const isButtonDisabled = () =>  {
+    if (checkMinimumOneImage() && checkCompulsoryFields()) return false;
+    return true;
+  }
+
+  console.log(userData)
   return (
     <Router>
       <div className="App">
         <Switch>
           <Route exact path="/">
             <Main
+              onChangeInput={handleChange}
               images={[image, image2, image3]}
               onUpload={onUpload}
               getOracle={getOracle}

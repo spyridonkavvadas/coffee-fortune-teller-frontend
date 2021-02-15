@@ -14,7 +14,8 @@ export default function Main({
   images,
   onUpload,
   getOracle,
-  isButtonDisabled
+  isButtonDisabled,
+  onChangeInput
 }) {
 
   return (
@@ -81,7 +82,12 @@ export default function Main({
           <div class="col-8">
             <Form.Group controlId="formName">
               <Form.Label></Form.Label>
-                <Form.Control type="text" placeholder="Enter your Name here" />
+                <Form.Control
+                  type="text"
+                  placeholder="Enter your Name here"
+                  name="name"
+                  onChange={onChangeInput}
+                />
                 <Form.Text className="text-muted">
               </Form.Text>
             </Form.Group>
@@ -95,7 +101,11 @@ export default function Main({
           <div class="col-8">
             <Form.Group controlId="dob">
               <Form.Label></Form.Label>
-              <Form.Control type="date" name="dob" placeholder="Date of Birth" />
+              <Form.Control
+                type="date"
+                name="birthday"
+                onChange={onChangeInput}
+                placeholder="Date of Birth" />
             </Form.Group>
           </div>  
       </div>
@@ -107,7 +117,12 @@ export default function Main({
           <div class="col-8">
           <Form.Group as={Col} controlId="formGridState">
               <Form.Label></Form.Label>
-              <Form.Control as="select" defaultValue="Select Gender">
+              <Form.Control
+                as="select"
+                defaultValue="Select Gender"
+                name="gender"
+                onChange={onChangeInput}
+              >
                 <option>Male</option>
                 <option>Female</option>
                 <option>Other</option>
@@ -123,7 +138,12 @@ export default function Main({
           <div class="col-8">
           <Form.Group as={Col} controlId="formGridState">
               <Form.Label></Form.Label>
-              <Form.Control as="select" defaultValue="Select Status">
+              <Form.Control
+                as="select"
+                name="status"
+                onChange={onChangeInput}
+                defaultValue="Select Status"
+              >
                 <option>Married</option>
                 <option>Engaged</option>
                 <option>Divorced</option>
