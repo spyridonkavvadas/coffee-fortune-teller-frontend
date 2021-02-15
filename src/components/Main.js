@@ -27,9 +27,9 @@ export default function Main({
       <div class='col-3 d-flex justify-content-start'><img class='img-fluid' src={persona0} alt={"Coffee Fortune Teller"} width={'140px'}/></div>
       {/* Instructions */}
       <div class='col-6 p-3'id='inst-text'>
-          <h6>Insert coffee cup photos here</h6>
-          <h6>Enter name, birthday, gender, and status</h6>
-          <h6>Press the button below and get the Oracle</h6>
+          <li>Upload at least one coffee cup photo</li>
+          <li>Enter name, birthday, gender, and status</li>
+          <li>Press the button below to get the Oracle</li>
       </div>
       <div class='col-3'></div>
       </div>
@@ -40,10 +40,12 @@ export default function Main({
             <Card>
             <Card.Img variant="top"  src={images[0]} alt="" width={'150px'} height={'150px'}/>
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Form.Group> 
+                <Card.Title>Photo 1</Card.Title>
+                <Form.Group>
+                  <label class="file-upload">
                   <input type="file" onChange={(e) => {onUpload(e.target.files[0], 1)}}/>
-                
+                  Upload Photo
+                  </label> 
                 </Form.Group>
               </Card.Body>
             </Card>
@@ -53,9 +55,12 @@ export default function Main({
             <Card>
               <Card.Img variant="top"  src={images[1]} alt="" width={'150px'} height={'150px'}/>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>Photo 2</Card.Title>
                     <Form.Group>
-                    <Form.File type="file" onChange={(e) => {onUpload(e.target.files[0], 2)}} />
+                    <label class="file-upload">
+                    <input type="file" onChange={(e) => {onUpload(e.target.files[0], 2)}} />
+                    Upload Photo
+                    </label>
                   </Form.Group>
               </Card.Body>
             </Card>
@@ -65,9 +70,12 @@ export default function Main({
           <Card>
               <Card.Img variant="top" src={images[2]} alt="" width={'150px'} height={'150px'}/>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>Photo 3</Card.Title>
                     <Form.Group>
-                    <Form.File id="uploadPhoto" type="file" onChange={(e) => {onUpload(e.target.files[0], 3)}} />
+                    <label class="file-upload">
+                    <input id="uploadPhoto" type="file" onChange={(e) => {onUpload(e.target.files[0], 3)}} />
+                    Upload Photo
+                    </label>
                   </Form.Group>
               </Card.Body>
             </Card>
