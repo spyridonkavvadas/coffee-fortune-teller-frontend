@@ -33,3 +33,7 @@ label.file-upload:hover {
   background-color:sienna;
   color:white;
 }
+
+svg {
+margin-right: 5px;
+}

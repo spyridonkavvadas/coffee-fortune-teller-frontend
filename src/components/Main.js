@@ -27,7 +27,7 @@ export default function Main({
       <div class='col-3 d-flex justify-content-start'><img class='img-fluid' src={persona0} alt={"Coffee Fortune Teller"} width={'140px'}/></div>
       {/* Instructions */}
       <div class='col-6 p-3'id='inst-text'>
-          <li>Upload at least one coffee cup photo</li>
+          <li>Upload coffee cup photo (at least one)</li>
           <li>Enter name, birthday, gender, and status</li>
           <li>Press the button below to get the Oracle</li>
       </div>
