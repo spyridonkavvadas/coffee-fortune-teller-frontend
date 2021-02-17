@@ -1,13 +1,18 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+import banner from "../images/banner2.jpg";
 import "./Header.css";
 
 
 function Header() {
   return (
     <header>
+      <Container>
       <div className="header-inner">
-          <h1>Coffee Fortune Teller</h1>
+         
+          <img class='img-fluid' src={banner} alt={"banner"}/>
       </div>
+      </Container>
     </header>
   );
 }

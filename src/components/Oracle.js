@@ -1,6 +1,7 @@
 import React from "react";
 import persona3 from "../images/persona3.jpg";
 
+
 import { FaFacebook, FaPinterestSquare, FaTwitter, FaEnvelope } from "react-icons/fa";
 
 
@@ -41,8 +42,9 @@ function Oracle({ oracle }) {
             <a href="https://twitter.com/intent/tweet/?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fsharingbuttons.io" target="_blank" rel="noreferrer" aria-label="Share on Twitter"> <FaTwitter size='1.3em'/></a>
 
             <a href="https://mail.google.com/mail/u/0/#search/rfc822msgid%3Aabcdefg%40example.com" target="_self" rel="noopener" aria-label="Share by E-Mail"><FaEnvelope size='1.3em' /></a>
-
             
+           
+
             </div>
           </div>
         </div>}

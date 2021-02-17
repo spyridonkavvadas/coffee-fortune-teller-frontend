@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import {Container, Col, Card} from 'react-bootstrap';
 import { FaUserAlt, FaCalendarDay, FaTransgender } from "react-icons/fa";
 import { IoIosHeartHalf } from "react-icons/io";
-import persona0 from "../images/persona0.png";
+
 
 
 
@@ -22,20 +22,9 @@ export default function Main({
     <>
       <Header />
       <Container>
-       {/* Fortune Teller Persona*/}
-      <div class="row align-items-center bg-faded mb-2">
-      <div class='col-3 d-flex justify-content-start'><img class='img-fluid' src={persona0} alt={"Coffee Fortune Teller"} width={'140px'}/></div>
-      {/* Instructions */}
-      <div class='col-6 p-3'id='inst-text'>
-          <li>Upload coffee cup photo (at least one)</li>
-          <li>Enter name, birthday, gender, and status</li>
-          <li>Press the button below to get the Oracle</li>
-      </div>
-      <div class='col-3'></div>
-      </div>
-
+       
        {/* Cards for inserting Coffee Cup Photos */}
-        <div class="row align-items-center bg-faded">
+        <div class="row align-items-center bg-faded mt-2">
           <div class="col-4">
             <Card>
             <Card.Img variant="top"  src={images[0]} alt="" width={'150px'} height={'150px'}/>
