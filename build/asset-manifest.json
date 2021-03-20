@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/coffee-fortune-teller-frontend/static/css/main.aaefcd3f.chunk.css",
+    "main.js": "/coffee-fortune-teller-frontend/static/js/main.7141ac4e.chunk.js",
+    "main.js.map": "/coffee-fortune-teller-frontend/static/js/main.7141ac4e.chunk.js.map",
+    "runtime-main.js": "/coffee-fortune-teller-frontend/static/js/runtime-main.5cb582a2.js",
+    "runtime-main.js.map": "/coffee-fortune-teller-frontend/static/js/runtime-main.5cb582a2.js.map",
+    "static/js/2.eaa85a58.chunk.js": "/coffee-fortune-teller-frontend/static/js/2.eaa85a58.chunk.js",
+    "static/js/2.eaa85a58.chunk.js.map": "/coffee-fortune-teller-frontend/static/js/2.eaa85a58.chunk.js.map",
+    "index.html": "/coffee-fortune-teller-frontend/index.html",
+    "static/css/main.aaefcd3f.chunk.css.map": "/coffee-fortune-teller-frontend/static/css/main.aaefcd3f.chunk.css.map",
+    "static/js/2.eaa85a58.chunk.js.LICENSE.txt": "/coffee-fortune-teller-frontend/static/js/2.eaa85a58.chunk.js.LICENSE.txt",
+    "static/media/banner2.c96819a2.jpg": "/coffee-fortune-teller-frontend/static/media/banner2.c96819a2.jpg",
+    "static/media/Main.css": "/coffee-fortune-teller-frontend/static/media/oldpaperbg.b3cad621.jpg",
+    "static/media/persona3.577a9198.jpg": "/coffee-fortune-teller-frontend/static/media/persona3.577a9198.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5cb582a2.js",
+    "static/js/2.eaa85a58.chunk.js",
+    "static/css/main.aaefcd3f.chunk.css",
+    "static/js/main.7141ac4e.chunk.js"
+  ]
+}
