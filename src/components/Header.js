@@ -12,10 +12,10 @@ function Header() {
          
           <img class='img-fluid' src={banner} alt={"banner"}/>
       </div>
-      <div class="row align-items-center">
-      <div class="col-2"></div>
+      <div class="row justify-content-center">
+      
 
-      <div class="instructions col-8">
+      <div class="instructions col-12 d-flex justify-content-center">
         
         <ul>
             <li>Upload a photo</li>
@@ -25,7 +25,7 @@ function Header() {
         
       </div>
 
-      <div class="col-2"></div>
+     
       </div>
       </Container>
 

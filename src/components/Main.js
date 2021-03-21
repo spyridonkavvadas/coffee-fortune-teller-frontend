@@ -25,12 +25,11 @@ export default function Main({
        
        {/* Cards for inserting Coffee Cup Photos */}
         <div class="row align-items-center bg-faded mt-2 container-fluid">
-          <div class="col-2"></div>
-            <div class="uploadphoto col-8">
+         
+            <div class="uploadphoto col-12 d-flex justify-content-center">
             <Card>
             <Card.Img variant="top"  src={images[0]} alt="" width={'150px'} height={'150px'}/>
               <Card.Body>
-                <Card.Title>Photo 1</Card.Title>
                 <Form.Group>
                   <label class="file-upload">
                   <input type="file" onChange={(e) => {onUpload(e.target.files[0], 1)}}/>
@@ -40,9 +39,7 @@ export default function Main({
               </Card.Body>
             </Card>
             </div>
-            <div class="col-2"></div>
-          
-
+        
         </div>
 
         <Form>
