@@ -12,6 +12,9 @@ function Header() {
          
           <img class='img-fluid' src={banner} alt={"banner"}/>
       </div>
+      <div>Upload a photo</div>
+      <div>Enter Name, birthday, genter, and status</div>
+      <div>Press the button "Get Oracle"</div>
       </Container>
     </header>
   );

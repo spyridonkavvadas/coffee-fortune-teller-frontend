@@ -25,7 +25,7 @@ export default function Main({
        
        {/* Cards for inserting Coffee Cup Photos */}
         <div class="row align-items-center bg-faded mt-2">
-          <div class="col-4">
+          <div class="col-12">
             <Card>
             <Card.Img variant="top"  src={images[0]} alt="" width={'150px'} height={'150px'}/>
               <Card.Body>
@@ -40,42 +40,14 @@ export default function Main({
             </Card>
           </div>
 
-          <div class="col-4">
-            <Card>
-              <Card.Img variant="top"  src={images[1]} alt="" width={'150px'} height={'150px'}/>
-                  <Card.Body>
-                    <Card.Title>Photo 2</Card.Title>
-                    <Form.Group>
-                    <label class="file-upload">
-                    <input type="file" onChange={(e) => {onUpload(e.target.files[0], 2)}} />
-                    Upload Photo
-                    </label>
-                  </Form.Group>
-              </Card.Body>
-            </Card>
-          </div>
-            
-          <div class="col-4">
-          <Card>
-              <Card.Img variant="top" src={images[2]} alt="" width={'150px'} height={'150px'}/>
-                  <Card.Body>
-                    <Card.Title>Photo 3</Card.Title>
-                    <Form.Group>
-                    <label class="file-upload">
-                    <input id="uploadPhoto" type="file" onChange={(e) => {onUpload(e.target.files[0], 3)}} />
-                    Upload Photo
-                    </label>
-                  </Form.Group>
-              </Card.Body>
-            </Card>
-          </div>
         </div>
 
         <Form>
       {/*Enter Name*/}
         <div class="row">
-          <div class="col-2"><h5 class='mb-0'>Name</h5></div>
-          <div class="col-2"><FaUserAlt size='1.2em'/></div>
+        <div class="col-1 align-items-right"><FaUserAlt size='1.2em'/></div>
+          <div class="col-3"><h5 class='mb-0'>Name</h5></div>
+
           <div class="col-8">
             <Form.Group controlId="formName">
               <Form.Label></Form.Label>
@@ -93,8 +65,9 @@ export default function Main({
 
       {/*Enter Birthday*/}
       <div class="row">
-        <div class="col-2"><h5 class='mb-0'>Birthday</h5></div>
-        <div class="col-2"><FaCalendarDay size='1.2em'/></div>
+        <div class="col-1"><FaCalendarDay size='1.2em'/></div>
+        <div class="col-3"><h5 class='mb-0'>Birthday</h5></div>
+        
           <div class="col-8">
             <Form.Group controlId="dob">
               <Form.Label></Form.Label>
@@ -109,8 +82,9 @@ export default function Main({
 
        {/*Enter Gender*/}
        <div class="row">
-        <div class="col-2"><h5 class='mb-0'>Gender</h5></div>
-        <div class="col-2"><FaTransgender size='1.5em'/></div>
+        
+        <div class="col-1"><FaTransgender size='1.5em'/></div>
+        <div class="col-3"><h5 class='mb-0'>Gender</h5></div>
           <div class="col-8">
           <Form.Group as={Col} controlId="formGridState">
               <Form.Label></Form.Label>
@@ -130,8 +104,9 @@ export default function Main({
 
        {/*Enter Status*/}
        <div class="row mb-4">
-        <div class="col-2"><h5 class='mb-0'>Status</h5></div>
-        <div class="col-2"><IoIosHeartHalf size='1.5em'/></div>
+
+        <div class="col-1"><IoIosHeartHalf size='1.5em'/></div>
+        <div class="col-3"><h5 class='mb-0'>Status</h5></div>
           <div class="col-8">
           <Form.Group as={Col} controlId="formGridState">
               <Form.Label></Form.Label>

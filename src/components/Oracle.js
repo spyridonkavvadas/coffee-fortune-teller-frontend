@@ -34,12 +34,12 @@ function Oracle({ oracle }) {
       </div>
 
       <div class='row align-items-center bg-faded mb-5'>
-        <div class='col-2'>
+        <div class='col-1'>
         </div>
         {oracle && 
-        <div class='col-8 align-text-right'>
+        <div class='col-10 align-text-right'>
           <h4>Here is your Oracle! </h4>
-          <div class='text-oracle p-5 mt-2' style={{backgroundColor: "whitesmoke"}}> 
+          <div class='text-oracle p-3 mt-2' style={{backgroundColor: "whitesmoke"}}> 
             {oracle.map((item) => <p>{item}</p>)}
             
             <div class='social-media d-flex justify-content-center'>
@@ -64,7 +64,7 @@ function Oracle({ oracle }) {
             </div>
           </div>
         </div>}
-        <div class='col-2'></div>
+        <div class='col-1'></div>
       </div>
       </container>
     </>
