@@ -27,14 +27,7 @@ body {
   margin: 0;
 }
 
-.card-image {
-  img.slide {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    max-height: 100vh;
-  }
-}
+
 
 div.row {
   align-items: flex-end;
@@ -63,4 +56,6 @@ div.col-2 {
   text-align: left !important;
 }
 
-
+div.card {
+  width: 200px;
+}

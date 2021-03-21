@@ -24,7 +24,7 @@ export default function Main({
       <Container>
        
        {/* Cards for inserting Coffee Cup Photos */}
-        <div class="row align-items-center bg-faded mt-2 container-fluid">
+        <div class="row myrow align-items-center bg-faded mt-2 container-fluid">
          
             <div class="uploadphoto col-12 d-flex justify-content-center">
             <Card>
@@ -44,7 +44,7 @@ export default function Main({
 
         <Form>
       {/*Enter Name*/}
-        <div class="row">
+        <div class="row myrow">
         <div class="col-1 align-items-right"><FaUserAlt size='1.2em'/></div>
           <div class="col-3"><h5 class='mb-0'>Name</h5></div>
 
@@ -64,7 +64,7 @@ export default function Main({
         </div>
 
       {/*Enter Birthday*/}
-      <div class="row">
+      <div class="row myrow">
         <div class="col-1"><FaCalendarDay size='1.2em'/></div>
         <div class="col-3"><h5 class='mb-0'>Birthday</h5></div>
         
@@ -81,7 +81,7 @@ export default function Main({
       </div>
 
        {/*Enter Gender*/}
-       <div class="row">
+       <div class="row myrow">
         
         <div class="col-1"><FaTransgender size='1.5em'/></div>
         <div class="col-3"><h5 class='mb-0'>Gender</h5></div>
@@ -105,7 +105,7 @@ export default function Main({
       </div>
 
        {/*Enter Status*/}
-       <div class="row mb-4">
+       <div class="row myrow mb-4">
 
         <div class="col-1"><IoIosHeartHalf size='1.5em'/></div>
         <div class="col-3"><h5 class='mb-0'>Status</h5></div>
@@ -129,7 +129,7 @@ export default function Main({
       </div>
 
       {/*Empty Row*/}
-      <div class="row"></div>
+      <div class="row myrow"></div>
 
       {/*Button*/}
       <div class="row">
