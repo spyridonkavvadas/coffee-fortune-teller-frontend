@@ -41,4 +41,5 @@ margin-right: 5px;
 .instructions {
   text-align: left !important;
   padding: 10px;
+  padding-bottom:0px;
 }
