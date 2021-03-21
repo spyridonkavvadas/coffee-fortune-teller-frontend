@@ -91,9 +91,11 @@ export default function Main({
               <Form.Control
                 as="select"
                 defaultValue="Select Gender"
+
                 name="gender"
                 onChange={onChangeInput}
               >
+                <option>Select Gender</option>
                 <option>Male</option>
                 <option>Female</option>
                 <option>Other</option>
@@ -114,8 +116,9 @@ export default function Main({
                 as="select"
                 name="status"
                 onChange={onChangeInput}
-                defaultValue="Select Status"
+                defaultValue="Select"  
               >
+                <option>Select Status</option>
                 <option>Married</option>
                 <option>Engaged</option>
                 <option>Divorced</option>
