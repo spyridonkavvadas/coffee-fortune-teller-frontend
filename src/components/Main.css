@@ -45,9 +45,6 @@ div.col-2 {
   text-align: left;
 }
 
-h5 {
-  
-}
 
 .file-upload {
   border: 1px solid black;
@@ -60,3 +57,9 @@ h5 {
   overflow: hidden;
   width: 0;
 }
+
+.text-oracle {
+  text-align: left !important;
+}
+
+

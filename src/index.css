@@ -25,7 +25,7 @@ div#inst-text.col-6.p-3 {
 }
 
 li {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -36,4 +36,9 @@ label.file-upload:hover {
 
 svg {
 margin-right: 5px;
+}
+
+.instructions {
+  text-align: left !important;
+  padding: 10px;
 }

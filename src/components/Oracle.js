@@ -37,8 +37,9 @@ function Oracle({ oracle }) {
         <div class='col-1'>
         </div>
         {oracle && 
-        <div class='col-10 align-text-right'>
+        <div class='col-10'>
           <h4>Here is your Oracle! </h4>
+
           <div class='text-oracle p-3 mt-2' style={{backgroundColor: "whitesmoke"}}> 
             {oracle.map((item) => <p>{item}</p>)}
             

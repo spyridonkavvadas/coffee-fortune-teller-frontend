@@ -24,8 +24,9 @@ export default function Main({
       <Container>
        
        {/* Cards for inserting Coffee Cup Photos */}
-        <div class="row align-items-center bg-faded mt-2">
-          <div class="col-12">
+        <div class="row align-items-center bg-faded mt-2 container-fluid">
+          <div class="col-2"></div>
+            <div class="uploadphoto col-8">
             <Card>
             <Card.Img variant="top"  src={images[0]} alt="" width={'150px'} height={'150px'}/>
               <Card.Body>
@@ -38,7 +39,9 @@ export default function Main({
                 </Form.Group>
               </Card.Body>
             </Card>
-          </div>
+            </div>
+            <div class="col-2"></div>
+          
 
         </div>
 
