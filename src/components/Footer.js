@@ -15,7 +15,7 @@ function Footer() {
         Created by Spyridon Kavvadas
       </div>
       <div class="footer2 col-12 d-flex justify-content-center">
-        <a href="https://kavvadas.dev">kavvadas.dev</a>
+        <a href="https://kavvadas.digital">kavvadas.digital</a>
       </div>
      
       </div>
