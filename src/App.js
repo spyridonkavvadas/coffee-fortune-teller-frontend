@@ -4,7 +4,7 @@ import Main from "./components/Main";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Oracle from "./components/Oracle";
 
-const ORACLE_URL = "https://coffee-fortune-teller-backend.herokuapp.com/oracles/random";
+const ORACLE_URL = "https://coffee-fortune-teller-backend.onrender.com/oracles/random";
 const defaultUserData = {
   name: '',
   birthday: '',
