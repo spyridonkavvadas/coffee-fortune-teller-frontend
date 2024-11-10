@@ -1,23 +1,16 @@
 {
   "files": {
-    "main.css": "/coffee-fortune-teller-frontend/static/css/main.c7344b81.chunk.css",
-    "main.js": "/coffee-fortune-teller-frontend/static/js/main.6f6a668c.chunk.js",
-    "main.js.map": "/coffee-fortune-teller-frontend/static/js/main.6f6a668c.chunk.js.map",
-    "runtime-main.js": "/coffee-fortune-teller-frontend/static/js/runtime-main.5cb582a2.js",
-    "runtime-main.js.map": "/coffee-fortune-teller-frontend/static/js/runtime-main.5cb582a2.js.map",
-    "static/js/2.4105a3e3.chunk.js": "/coffee-fortune-teller-frontend/static/js/2.4105a3e3.chunk.js",
-    "static/js/2.4105a3e3.chunk.js.map": "/coffee-fortune-teller-frontend/static/js/2.4105a3e3.chunk.js.map",
+    "main.css": "/coffee-fortune-teller-frontend/static/css/main.387db43a.css",
+    "main.js": "/coffee-fortune-teller-frontend/static/js/main.6da12f72.js",
+    "static/media/persona3.jpg": "/coffee-fortune-teller-frontend/static/media/persona3.577a9198d50786198ab0.jpg",
+    "static/media/banner1.jpg": "/coffee-fortune-teller-frontend/static/media/banner1.91f431795c2d2f4c09fe.jpg",
+    "static/media/oldpaperbg.jpg": "/coffee-fortune-teller-frontend/static/media/oldpaperbg.b3cad621d9ba47996ac1.jpg",
     "index.html": "/coffee-fortune-teller-frontend/index.html",
-    "static/css/main.c7344b81.chunk.css.map": "/coffee-fortune-teller-frontend/static/css/main.c7344b81.chunk.css.map",
-    "static/js/2.4105a3e3.chunk.js.LICENSE.txt": "/coffee-fortune-teller-frontend/static/js/2.4105a3e3.chunk.js.LICENSE.txt",
-    "static/media/banner1.91f43179.jpg": "/coffee-fortune-teller-frontend/static/media/banner1.91f43179.jpg",
-    "static/media/Main.css": "/coffee-fortune-teller-frontend/static/media/oldpaperbg.b3cad621.jpg",
-    "static/media/persona3.577a9198.jpg": "/coffee-fortune-teller-frontend/static/media/persona3.577a9198.jpg"
+    "main.387db43a.css.map": "/coffee-fortune-teller-frontend/static/css/main.387db43a.css.map",
+    "main.6da12f72.js.map": "/coffee-fortune-teller-frontend/static/js/main.6da12f72.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.5cb582a2.js",
-    "static/js/2.4105a3e3.chunk.js",
-    "static/css/main.c7344b81.chunk.css",
-    "static/js/main.6f6a668c.chunk.js"
+    "static/css/main.387db43a.css",
+    "static/js/main.6da12f72.js"
   ]
 }
